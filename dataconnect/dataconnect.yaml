@@ -1,0 +1,12 @@
+specVersion: "v1"
+serviceId: "turbine-shutdown-service"
+location: "asia-south1"
+schema:
+  source: "./schema"
+  datasource:
+    postgresql:
+      database: "fdcdb"
+      cloudSql:
+        instanceId: "turbine-shutdown-service-fdc"
+      # schemaValidation: "COMPATIBLE"
+connectorDirs: ["./connector"]
